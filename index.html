@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero-card">
+        <div>
+          <p class="eyebrow">Live Conditions</p>
+          <h1>Weather Dashboard</h1>
+          <p class="intro">
+            Track current conditions and a short forecast for a few major cities.
+          </p>
+        </div>
+        <button id="refresh-button" class="refresh-button" type="button">
+          Refresh data
+        </button>
+      </section>
+
+      <section class="dashboard-grid">
+        <div class="panel panel-large">
+          <div class="panel-heading">
+            <h2>Current Weather</h2>
+            <p id="last-updated" class="muted"></p>
+          </div>
+          <div id="current-weather" class="current-weather"></div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-heading">
+            <h2>3 Day Outlook</h2>
+            <p class="muted">Feels-like trend</p>
+          </div>
+          <div id="forecast" class="forecast-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./src/app.js"></script>
+  </body>
+  </html>
